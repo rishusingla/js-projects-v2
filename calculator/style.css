@@ -1,0 +1,85 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #1e1e2f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  background: #2e2e3f;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #f9f9f9;
+}
+
+.input input {
+  width: 100%;
+  padding: 12px;
+  font-size: 24px;
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  background-color: #444;
+  color: white;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.box {
+  padding: 18px 0;
+  font-size: 20px;
+  background: #3e3e50;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.box:hover {
+  background: #5a5a6e;
+}
+
+#equal {
+  background-color: #ff8c42;
+  color: white;
+}
+
+#equal:hover {
+  background-color: #ff7a21;
+}
+
+#aclear,
+#clear {
+  background-color: #d9534f;
+  color: white;
+}
+
+#aclear:hover,
+#clear:hover {
+  background-color: #c9302c;
+}
