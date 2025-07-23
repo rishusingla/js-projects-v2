@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dictionary App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiar style=" style="background-color: #0D6EFD; color: white;">
+        <div class=" container-fluid">
+            <a class="navbar-brand" href="#">Dictionary App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About this app</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" id="searchinput"
+                        aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit" id="searchbtn">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div>
+        <div class="px-4 py-5 my-5 text-center">
+            <i class="fa-solid fa-book-open fa-2xl"></i>
+            <h1 class=" display-5 fw-bold text-body-emphasis"><span id="word">Your Word will appear here</span></h1>
+            <div class="col-lg-6 mx-auto">
+                <p style="text-align: left;"><span id="definition">Welcome to the Dictionary App.Type your favourite
+                        button in
+                        the search bar at the top right and you will see the meaning of that word here!</span>
+                <p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> <button type="button"
+                        class="btn btn-primary btn-lg px-4 gap-3" fdprocessedid="939tcw">Talk to Author</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4"
+                        fdprocessedid="xx9v8">Contribute</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dictionary App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        body {
+            background: #f8f9fa;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .navbar {
+            background: linear-gradient(to right, #007bff, #6610f2);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .hero-section {
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .search-box {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .definition-card {
+            margin-top: 2rem;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+
+        .icon {
+            font-size: 3rem;
+            color: #6610f2;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-book"></i> Dictionary</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About App</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="hero-section">
+        <div class="icon"><i class="fas fa-book-open"></i></div>
+        <h1 class="fw-bold mb-3">Explore the Power of Words</h1>
+
+        <div class="search-box">
+            <form id="searchForm">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter a word" id="searchinput" />
+                    <button class="btn btn-custom" type="submit" id="searchbtn">Search</button>
+                </div>
+            </form>
+
+            <div id="definitionResult" class="definition-card">
+                <h3 id="word" class="text-primary">Your word will appear here</h3>
+                <p id="definition" class="text-muted">
+                    Type a word above and hit "Search" to find its meaning.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const searchbtn = document.getElementById("searchbtn");
+        const searchinput = document.getElementById("searchinput");
+        const word = document.getElementById("word");
+        const definition = document.getElementById("definition");
+
+        const dictionary = async (searchTerm) => {
+            const url = `https://dictionary-by-api-ninjas.p.rapidapi.com/v1/dictionary?word=${searchTerm}`;
+            const options = {
+                method: "GET",
+                headers: {
+                    "x-rapidapi-key": "20806b1067msh554446bf611d182p137d5ejsn363f44728ef4",
+                    "x-rapidapi-host": "dictionary-by-api-ninjas.p.rapidapi.com",
+                },
+            };
+
+            try {
+                const response = await fetch(url, options);
+                const result = await response.json();
+                word.innerText = searchTerm;
+                definition.innerText = result.definition || "No definition found.";
+            } catch (error) {
+                word.innerText = "Error";
+                definition.innerText = "Could not fetch the definition. Try again later.";
+            }
+        };
+
+        document.getElementById("searchForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            dictionary(searchinput.value.trim());
+        });
+    </script>
+
+</body>
+
+</html> -->
